@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess Game</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'profile_app/style.css' %}">
+</head>
+<body>
+    <h1>Guess a Number (1-10)</h1>
+    <form method="get">
+        <input type="number" name="guess" min="1" max="10">
+        <button type="submit">Guess</button>
+    </form>
+    <p>{{ message }}</p>
+</body>
+</html>
